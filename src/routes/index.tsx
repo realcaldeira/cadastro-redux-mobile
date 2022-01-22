@@ -3,8 +3,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from '../screens/Home';
+import Login from '../screens/Login';
+import Cadastro from '../screens/Cadastro';
 
 const { Navigator, Screen } = createNativeStackNavigator();
+
 
 export function Routes() {
   return (
@@ -19,7 +22,7 @@ export function Routes() {
           component={Home}
         />
 
-        {/* <Screen
+        <Screen
           name='Login'
           component={Login}
         />
@@ -27,7 +30,7 @@ export function Routes() {
         <Screen
           name='Cadastro'
           component={Cadastro}
-        /> */}
+        />
       </Navigator>
     </NavigationContainer>
   )

@@ -6,6 +6,24 @@ export const Container = styled.View`
   align-items: center;
 `;
 
+
+
+export const Input = styled.TextInput`
+  width: 80%;
+  height: 10%;
+  background-color: grey;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+`;
+
+export const Text = styled.Text`
+  color: black;
+  font-size: 24px;
+`;
+
+
 export const Button = styled.TouchableOpacity`
   width: 80%;
   height: 10%;
@@ -14,9 +32,4 @@ export const Button = styled.TouchableOpacity`
   align-items: center;
   margin: 10px;
   border-radius: 10px; 
-`;
-
-export const Text = styled.Text`
-  color: white;
-  font-size: 24px;
 `;

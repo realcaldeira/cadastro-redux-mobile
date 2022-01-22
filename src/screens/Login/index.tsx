@@ -1,15 +1,12 @@
 import React from 'react';
-import { Container, Button, Text } from './styles';
+import { Container, Text, Input } from './styles';
 
 
 function Login() {
   return (
     <Container>
-      <Button>
-        <Text>TST</Text>
-      </Button>
-
-      
+        <Text>Email</Text>
+        <Input />
     </Container>
   )
 }
