@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "project-redux-mobile",
+    "slug": "project-redux-mobile",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "project-redux-mobile"
+}
