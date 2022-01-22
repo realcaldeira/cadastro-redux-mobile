@@ -10,7 +10,7 @@ export const Container = styled.View`
 
 export const Input = styled.TextInput`
   width: 80%;
-  height: 10%;
+  height: 50px;
   background-color: grey;
   border-radius: 10px;
   color: white;

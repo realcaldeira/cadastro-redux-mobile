@@ -1,17 +1,12 @@
 import React from 'react';
-import { Container, Button, Text } from './styles';
+import { Container, Text, Input } from './styles';
 
 
 function Cadastro() {
   return (
     <Container>
-      <Button>
-        <Text>Login</Text>
-      </Button>
-
-      <Button>
-        <Text>Cadastro</Text>
-      </Button>
+        <Text>Email</Text>
+        <Input />
     </Container>
   )
 }
