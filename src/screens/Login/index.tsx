@@ -1,12 +1,16 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container, Text, Input } from './styles';
 import { connect } from 'react-redux';
+import { editEmail } from '../../actions/AuthActions';
 
 export function Login(props) {
   return (
     <Container>
         <Text>Email</Text>
-        <Input value={props.email} />
+        <Input 
+          value={props.email} 
+          onChangeText={(texto)=> props.editEmail(texto)}
+        />
     </Container>
   )
 }
@@ -17,7 +21,7 @@ const mapStateToProps = ({ auth }) => {
   };
 };
 
-const LoginConnect = connect(mapStateToProps)(Login);
+const LoginConnect = connect(mapStateToProps, { editEmail })(Login);
 
 export default LoginConnect;
 
